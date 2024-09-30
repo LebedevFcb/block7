@@ -1,7 +1,7 @@
 {
   "name": "web-last-block",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Требования к проекту",
   "keywords": [
     "web",
     "scss",
@@ -32,17 +32,19 @@
     "autoprefixer": "9.6.1",
     "babel-loader": "8.0.6",
     "copy-webpack-plugin": "5.1.0",
-    "css-loader": "3.2.0",
-    "file-loader": "4.2.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^4.2.0",
     "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
-    "mini-css-extract-plugin": "0.8.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.14.1",
     "postcss-loader": "3.0.0",
-    "sass-loader": "7.2.0",
-    "webpack": "4.41.2",
-    "webpack-cli": "3.3.7",
-    "webpack-dev-server": "^3.11.0"
+    "sass": "^1.77.8",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3"
   },
   "engineStrict": true,
   "engines": {
@@ -53,5 +55,16 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-karo/webpack-static-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex-karo/webpack-static-template/issues"
+  },
+  "homepage": "https://github.com/alex-karo/webpack-static-template#readme",
+  "dependencies": {
+    "swiper": "^11.1.9"
   }
 }

@@ -16,6 +16,7 @@ module.exports = {
 
   // Source maps для удобства отладки
   devtool: "source-map",
+  
 
   module: {
     rules: [
@@ -31,6 +32,8 @@ module.exports = {
           }
         }
       },
+
+     
 
       // Компилируем SCSS в CSS
       {

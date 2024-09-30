@@ -1,0 +1,76 @@
+.footer {
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-grey;
+  border-top: 1px solid $lazur-color;
+  width: 1120px;
+  margin: 0 auto;
+  background-color: $gray-color;
+  padding: 5px 15px;
+
+  @media screen and (max-width: 2200px) {
+    max-width: 1120px;
+    display: flex;
+
+    &__date {
+      margin-left: 25px;
+      margin-right: 145px;
+      width: 220px;
+    }
+
+    &__policic {
+      margin-right: 145px;
+      width: 220px;
+    }
+
+    &__info {
+      margin-right: 25px;
+      width: 325px;
+      text-align: right;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: auto;
+    display: flex;
+
+    &__date {
+      margin-right: 35px;
+      width: 220px;
+      margin-left: auto;
+    }
+
+    &__policic {
+      margin-right: 25px;
+      width: 220px;
+    }
+
+    &__info {
+      width: 250px;
+      height: 50px;
+      text-align: right;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 320px;
+    display: block;
+
+    &__date,
+    &__policic,
+    &__info {
+      margin: 15px auto;
+      text-align: center;
+    }
+
+    &__info {
+      width: 300px;
+    }
+  }
+
+  .price__text-button {
+    margin-left: 10px;
+    width: 195px;
+  }
+}

@@ -1,17 +1,19 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import '../fonts/fonts.scss';
+@import '../scss/base/variables.scss';
+@import './base/base.scss';
+@import './base/images.scss';
+@import './blocks/header/header.scss';
+@import './blocks/title/title.scss';
+@import './blocks/nav-bar/navbar.scss';
+@import './blocks/block-info/block-info.scss';
+@import './blocks/foto/foto.scss';
+@import './blocks/brands/brands.scss';
+@import './blocks/burgermenu/burgermenu.scss';
+@import './blocks/repair/repair.scss';
+@import './blocks/price/price.scss';
+@import './swiper/swiper.scss';
+@import './base/vendor.scss';
+@import './swiper/swiper-repair.scss';
+@import './blocks/footer/footer.scss';
+@import './blocks/madal-call/modal-call.scss';
+@import './blocks/modal-text/modal-text.scss';

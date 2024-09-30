@@ -1,0 +1,67 @@
+.swiper-pagination-brands,
+.swiper-pagination-technique {
+  position: absolute;
+  text-align: center;
+  transform: translateY(11px);
+  width: 100%;
+  z-index: 10;
+
+  &.swiper-pagination-brands {
+    transform: translateY(5px);
+  }
+}
+
+.swiper-pagination-brands-bullet {
+  background: rgba(0, 0, 0, 0.2);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff3e79;
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-pagination-price {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(21px);
+
+  .swiper-pagination-price-bullet {
+    background: rgba(0, 0, 0, 0.2);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    z-index: 100;
+    cursor: pointer;
+
+    &.swiper-pagination-bullet-active {
+      background: #ff3e79;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0 !important; /* Удаляем отступ */
+    width: auto !important; /* Сбрасываем ширину */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technique__link {
+    margin-right: 0 !important;
+    width: auto !important;
+  }
+}

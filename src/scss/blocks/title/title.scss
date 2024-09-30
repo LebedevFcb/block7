@@ -1,0 +1,51 @@
+/* добиваемся отображения 2 элементов и кнопки отзовы справа при >1120px */
+@media (min-width: 1120px) {
+  .title__column2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .title__column2--disp1120 {
+    display: flex;
+    margin-left: auto;
+    margin-right: 25px;
+  }
+
+  .title__column2-repair-text {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .title__column2-checkstatus-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .title__column2--disp1120 {
+    display: none;
+  }
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.title-img {
+  margin: 20px 16px 20px 0px;
+}
+
+.title-text {
+  margin-right: auto;
+  font-family: 'TTLakes';
+}
+
+.title__column2-repair-text {
+  margin-right: 8px;
+}

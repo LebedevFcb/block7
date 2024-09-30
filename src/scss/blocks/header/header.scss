@@ -1,0 +1,232 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid $lazur-color;
+  height: 88px;
+}
+
+/* разделитель псевдоэлемент 320 */
+
+.cps-psevdo {
+  position: relative;
+}
+
+.cps-psevdo::after {
+  content: '';
+  width: 2px;
+  height: 35px;
+  position: absolute;
+  background-color: #eaeaea;
+  left: 125px;
+  bottom: 10px;
+  display: block;
+}
+
+.cps-psevdo::before {
+  content: '';
+  width: 2px;
+  height: 35px;
+  position: absolute;
+  background-color: #eaeaea;
+  left: -15px;
+  bottom: 10px;
+  display: block;
+}
+
+@media (max-width: 376px) {
+  .cps-psevdo::before {
+    display: none;
+  }
+}
+
+@media (min-width: 377px) {
+  .cps-psevdo::after {
+    display: none;
+  }
+}
+
+/* разделитель псевдоэлемент 768px */
+.profile-psevdo {
+  position: relative;
+}
+
+.profile-psevdo::after {
+  content: '';
+  width: 2px;
+  height: 35px;
+  position: absolute;
+  background-color: #eaeaea;
+  left: 55px;
+  bottom: 5px;
+  display: block;
+}
+
+/* при размере экрана от 1119 header исчезнет */
+@media (min-width: 1119px) {
+  .header {
+    display: none;
+  }
+}
+
+/* добиваемся отображения 2 элементов и кнопки отзовы справа при >1120px */
+@media (min-width: 1120px) {
+  .title__column2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .title__column2--disp1120 {
+    display: flex;
+
+    margin-right: 25px;
+  }
+
+  .title__column2-repair-text {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .title__column2-checkstatus-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .title__column2--disp1120 {
+    display: none;
+  }
+}
+
+.header__column1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+}
+
+.header__column1--disp320 {
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .header__column1--disp768,
+  .header__column2--disp768 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .header__column1--disp768,
+  .header__column--disp768 {
+    display: block;
+  }
+}
+
+.header__column2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.header__column2--disp320 {
+  padding: 16px;
+}
+
+.header__column2--disp320:nth-last-child(1) {
+  padding-left: 0;
+}
+
+.header__column2--disp768 {
+  margin-right: 16px;
+}
+
+.header__column2--disp768:first-child {
+  margin-left: 250px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.burger:hover {
+  background-color: $hover-color;
+}
+
+.toggle-repair {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color;
+  background-image: url('/src/img/Group-repair.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.toggle-repair:hover {
+  background-color: $hover-color;
+}
+
+.toggle-serch {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color;
+  background-image: url('/src/img/icon-serch.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.toggle-serch:hover {
+  background-color: $hover-color;
+}
+
+.header-button__call {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color;
+  background-image: url('/src/img/phone.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header-button__call:hover {
+  background-color: $hover-color;
+}
+
+.header-button__text {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color;
+  background-image: url('/src/img/chatmy.png');
+  background-size: 25px 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header-button__text:hover {
+  background-color: $hover-color;
+}

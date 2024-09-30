@@ -1,0 +1,126 @@
+.technique__title {
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  background-image: linear-gradient(to right, #f8f8f8, white);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-top: 1px solid #d9fff5;
+  padding-left: 35px;
+}
+
+.wrapper__repair {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.technique__lists {
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.technique__items {
+  margin: 0 auto;
+}
+
+.technique__link {
+  display: block;
+  padding-left: 16px;
+  padding-top: 16px;
+  width: 224px;
+  height: 160px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin: 20px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 175px 105px;
+}
+
+.technique__link:hover {
+  border: 2px solid #41f6d7;
+  transition: opacity 0.7s;
+}
+
+a {
+  display: block;
+}
+
+.technique-button {
+  width: 133px;
+  margin-left: 30px;
+  width: 133px;
+  height: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.technique-button__button {
+  border: none;
+  padding-bottom: 15px;
+  margin-left: 5px;
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.technique-button__button::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  margin-left: -15px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 820px) {
+  .zalupa::before {
+    content: '';
+    transform: rotate(180deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .technique {
+    width: 1120px;
+  }
+  .technique__lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1121px) {
+  .technique__lists li:nth-child(4) {
+    display: block;
+  }
+
+  .technique__link {
+    width: 235px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .technique__lists {
+    width: 900px;
+  }
+}

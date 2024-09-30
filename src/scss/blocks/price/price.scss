@@ -1,0 +1,348 @@
+.price {
+  margin: 0;
+  position: relative;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.price__container {
+  position: relative;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.price__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.price__item {
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 260px;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.price__link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #333333;
+  text-decoration: none;
+  width: 192px;
+  margin: 15px 16px 0;
+  font-weight: 700;
+}
+
+.price__link::after {
+  content: '';
+  border: solid #ff3e79;
+  border-width: 0 3px 3px 0;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .price__item {
+    width: 260px !important;
+    height: 220px !important;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .btn-price {
+    position: absolute;
+    right: 910px;
+    top: 150px;
+  }
+
+  .price {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-price {
+    width: 120px;
+    height: 30px;
+    background-color: #ff3e79;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transform: translate(880px, -50px);
+  }
+  .btn-price--unik {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: #ff3e79;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transform: translate(880px, 515px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__container {
+    margin: 0 24px;
+    display: flex;
+    justify-content: center;
+    padding: 19px 0 24px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price__container {
+    margin: 0 24px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .price__container {
+    margin: 0 auto;
+    width: 800px;
+  }
+  .btn-price {
+    transform: translate(620px, 0px);
+  }
+  .btn-price--unik {
+    transform: translate(670px, 600px);
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .btn-price {
+    transform: translate(900px, -1px);
+  }
+  .btn-price--unik {
+    transform: translate(900px, 600px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__list {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price__list {
+    max-width: 1056px;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__item {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 348px 74px 81px 130px;
+    grid-template-areas:
+      'title-service title-price title-term .'
+      'service price term button';
+  }
+
+  .price__item:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .price__item:not(:first-child) .price__title {
+    display: none;
+  }
+}
+
+.price__title {
+  margin: 0;
+  padding: 0 0 2px 0;
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-price {
+  width: 120px;
+  height: 30px;
+  background-color: #ff3e79;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.btn-price:hover {
+  background-color: #bc5d7a;
+}
+
+@media screen and (min-width: 768px) {
+  .price__title {
+    padding-bottom: 16px;
+  }
+}
+
+.price__title--title-service {
+  grid-area: title-service;
+}
+
+.price__title--title-price {
+  grid-area: title-price;
+}
+
+.price__title--title-term {
+  grid-area: title-term;
+}
+
+.price__text {
+  margin: 0;
+  padding: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .price__text {
+    padding: 23px 0;
+  }
+
+  .price__text:last-of-type {
+    padding: 0;
+  }
+}
+
+.price__text--service {
+  grid-area: service;
+}
+
+.price__text--price {
+  grid-area: price;
+}
+
+.price__text--term {
+  grid-area: term;
+}
+
+.price__description {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  margin: 0 16px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .price__description {
+    margin: 0 24px;
+    max-width: 421px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__link {
+    min-width: 316px;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price__link {
+    margin-left: 32px;
+  }
+}
+
+.info-wrapper {
+  margin-right: auto;
+
+  background-color: #f8f8f8;
+}
+
+.price__text-info {
+  font-family: 'TTLakes';
+  margin-top: 0;
+  margin-left: 40px;
+  width: 400px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+.price__text-button {
+  font-weight: 900;
+  margin-bottom: 30px;
+  margin-left: 35px;
+  margin-top: 20px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.price__text-button:after {
+  content: '>';
+
+  margin-left: 5px;
+  color: #ff3e79;
+}
+
+@media screen and (min-width: 1408px) {
+  .btn-price {
+    transform: translateX(870px);
+  }
+}
+
+.info-wrapper {
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .price__text-info {
+    width: 250px;
+    margin-left: 16px;
+    margin-bottom: 70px;
+  }
+  .info-wrapper {
+    width: auto;
+  }
+  .swiper-wrapper {
+    background-color: #f8f8f8;
+    border: 0;
+  }
+
+  .price__container {
+    width: auto;
+  }
+}

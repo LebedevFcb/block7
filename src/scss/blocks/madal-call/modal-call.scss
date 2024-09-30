@@ -1,0 +1,164 @@
+.modal__call {
+  position: fixed;
+  display: flex;
+  z-index: 20;
+  right: 0;
+}
+
+.call__modal::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 400px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100; /* Поверх всех элементов */
+  pointer-events: none; /* Не блокировать взаимодействие */
+}
+
+.call__modal {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 1000px;
+  background-color: white;
+  border: 1px solid #eaeaea; // Можно заменить на $gray-color
+}
+
+.hidden {
+  display: none;
+}
+
+.call__button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  background-color: $pink-color; // Заменен на переменную
+  background-image: url('/src/img/close-modal.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 200;
+}
+
+@media screen and (min-width: 1144px) {
+  .call__button {
+    transform: translate(-70px, 20px);
+  }
+  .call__title {
+    transform: translateY(-37px);
+  }
+  .form {
+    transform: translateY(-60px);
+  }
+  .form__submit {
+    transform: translateY(-30px);
+  }
+}
+
+@media screen and (max-width: 1144px) {
+  .call__button {
+    transform: translate(15px, 25px);
+  }
+  .call__title {
+    margin-top: 50px;
+  }
+
+  .call__modal::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 320px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 100; /* Поверх всех элементов */
+    pointer-events: none; /* Не блокировать взаимодействие */
+  }
+}
+
+.call__button:hover {
+  background-color: #ff598b; // Замените на переменную, если хотите
+}
+
+.call__title::before {
+  content: '';
+  border-right: 5px solid $wlazur-color; // Заменен на переменную
+  border-radius: 6px;
+  padding: 0;
+  margin-right: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.form__submit {
+  padding: 5px;
+  width: 136px;
+  height: 32px;
+  margin-left: auto;
+  margin-top: 23px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid #eaeaea; // Можно заменить на $gray-color
+  background-color: $pink-color; // Заменен на переменную
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #ff598b; // Замените на переменную, если хотите
+}
+
+.form__submit::after {
+  content: '>';
+  margin-left: 20px;
+  font-size: $text-small; // Заменен на переменную
+}
+
+.form__number {
+  width: 290px;
+  height: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  border: 1px solid #eaeaea; // Можно заменить на $gray-color
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+.form__number:hover {
+  border-color: #dadada; // Замените на переменную, если хотите
+}
+
+.form__text {
+  width: 288px;
+  margin-left: 15px;
+}
+
+.form__text-link {
+  color: $pink-color; // Заменен на переменную
+}
+
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет от родительского элемента */
+}
+
+@media screen and (min-width: 1144px) {
+  .call__modal {
+    width: 400px;
+  }
+  .form__number {
+    width: 350px;
+  }
+  .form__text {
+    width: 386px;
+  }
+}

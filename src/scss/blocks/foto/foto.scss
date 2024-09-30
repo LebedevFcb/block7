@@ -1,0 +1,38 @@
+.foto {
+  background-color: $gray-color;
+
+  &__cps {
+    width: 100%;
+
+    @media (min-width: 321px) {
+      width: 380px;
+      border-radius: 6px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 1121px) {
+      width: 550px;
+    }
+  }
+}
+
+@media (min-width: 1121px) {
+  .info__text,
+  .info__text-end,
+  .info__text-hidden {
+    width: 500px;
+  }
+
+  .read-next {
+    margin-bottom: 50px;
+  }
+
+  .nav-bar__croll {
+    flex-wrap: wrap;
+  }
+
+  .navbar__croll-item:last-child {
+    margin-top: 25px;
+  }
+}
