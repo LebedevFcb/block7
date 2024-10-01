@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack 4 Starter</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+   
+    <div class="wrapperall">
+      <div class="wrappertwo">
+    <div class="main">
+      <header class="header">
+        <ul class="header__column1">
+          <li class="header__column1--disp320">
+            <input class="burger" type="button">
+          </li>
+          <li class="header__column1--disp320">
+            <div class="cps-psevdo">
+              <input type="image" src="img/Groupcps.png" alt="логотип">
+            </div>
+          </li>
+        </ul>
+        <ul class="header__column2">
+          <li class="header__column2--disp768">
+            <button class="header-button__call" alt="позвонить"></button>
+          </li>
+          <li class="header__column2--disp768">
+            <button class="header-button__text" alt="написать"></button>
+          </li>
+          <li class="header__column2--disp768">
+            <div class="profile-psevdo">
+              <button class="toggle-profile" alt="профиль"></button>
+            </div>
+          </li>
+          <li class="header__column2--disp320">
+            <button class="toggle-repair" alt="ремонт"></button>
+          </li>
+          <li class="header__column2--disp320">
+            <button class="toggle-serch" alt="поиск"></button>
+          </li>
+        </ul>
+      </header>
+
+      <div class="title">
+        <div class="title-img">
+          <img src="img/highlight.png" width="4px" height="40px" alt="декор">
+        </div>
+        <div class="title-text">
+          <h1>Услуги и сервисы</h1>
+        </div>
+        <ul class="title__column2">
+          <li class="title__column2--disp1120">
+            <span class="title__column2-repair-text">Оставить заявку</span>
+            <button class="toggle-repair" alt="ремонт"></button>
+          </li>
+          <li class="title__column2--disp1120">
+            <span class="title__column2-checkstatus-text">Статус ремонта</span>
+            <button class="toggle-serch" alt="поиск"></button>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__croll">
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Ремонтируемые устройства</a>
+          </li>
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Дополнительные услуги</a>
+          </li>
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Цены на услуги</a>
+          </li>
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Адреса сервисных центров</a>
+          </li>
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Специальные цены</a>
+          </li>
+          <li class="navbar__croll-item">
+            <a class="navbar__button" href="#">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="block-info">
+        <div class="info">
+          <p class="info__text">
+            Мы являемся геями авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p class="info__text-hidden">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера,
+            <span class="info__text-end">что к нам обращаются по рекомендациям и, в свою очередь, советуют
+              нас родным и близким.</span>
+          </p>
+          <button class="nextbtn__btn" type="button">Читать далее</button>
+        </div>
+        <div class="foto">
+          <img class="foto__cps" src="img/CPS.jpg" alt="Фото CPS">
+        </div>
+      </section>
+    </div>
+
+    <section class="brands">
+      <div class="card__container swiper swiper-brands">
+        <h2 class="header__title">Ремонт техники различных брендов</h2>
+        <ul class="cards-list swiper-wrapper">
+          <li class="card__item swiper-slide">
+            <a class="card__link lenovo" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link samsung" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link apple" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link viewSonic" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link bosch" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link hp" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link acer" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link sony" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link lenovo" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link samsung" href="#" target="_blank"></a>
+          </li>
+          <li class="card__item swiper-slide">
+            <a class="card__link apple" href="#" target="_blank"></a>
+          </li>
+        </ul>
+        <button type="button" class="change__btn revert show">Показать все</button>
+        <div class="swiper-pagination-brands"></div>
+      </div>
+    </section>
+
+    
+    <div class="wrapper__repair">
+      <section class="technique">
+        <div class="technique__header">
+          <h2 class="technique__title">Ремонт различных видов техники</h2>
+        </div>
+        <div class="technique__items swiper swiper-technique">
+          <ul class="technique__lists swiper-wrapper">
+            <li class="technique__item technique__item--laptop swiper-slide">
+              <a href="#" class="technique__link">Ремонт ноутбуков</a>
+            </li>
+            <li class="technique__item technique__item--tablet swiper-slide">
+              <a href="#" class="technique__link">Ремонт планшетов</a>
+            </li>
+            <li class="technique__item technique__item--pc swiper-slide">
+              <a href="#" class="technique__link">Ремонт ПК</a>
+            </li>
+            <li class="technique__item technique__item--monitor swiper-slide">
+              <a href="#" class="technique__link">Ремонт мониторов</a>
+            </li>
+            <li class="technique__item technique__item--laptopdbl swiper-slide">
+              <a href="#" class="technique__link">Ремонт ноутбуков</a>
+            </li>
+            <li class="technique__item technique__item--tabletdbl swiper-slide">
+              <a href="#" class="technique__link">Ремонт планшетов</a>
+            </li>
+            <li class="technique__item technique__item--pcdbl swiper-slide">
+              <a href="#" class="technique__link">Ремонт ПК</a>
+            </li>
+            <li class="technique__item technique__item--monitordbl swiper-slide">
+              <a href="#" class="technique__link">Ремонт мониторов</a>
+            </li>
+          </ul>
+          <div class="swiper-pagination-technique"></div>
+        </div>
+        <div class="technique-button">
+          <button class="technique-button__button" type="button">Показать все</button>
+        </div>
+       
+      </section>
+    </div>
+    
+    <section class="price">
+      <h2 class="technique__title">Ремонт различных видов техники</h2>
+      <div class="price__container swiper-price">
+        <ul class="price__list swiper-wrapper">
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+            <p class="price__text price__text--service">Диагностика</p>
+            <h3 class="price__title price__title--title-price">Цена</h3>
+            <p class="price__text price__text--price">Бесплатно</p>
+            <h3 class="price__title price__title--title-term">Срок</h3>
+            <p class="price__text price__text--term">30-120 мин</p>
+            <button class="btn-price--unik">заказать</button>
+          </li>
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+            <p class="price__text price__text--service">Замена дисплея</p>
+            <h3 class="price__title price__title--title-price">Цена</h3>
+            <p class="price__text price__text--price">Бесплатно</p>
+            <h3 class="price__title price__title--title-term">Срок</h3>
+            <p class="price__text price__text--term">30 мин</p>
+            <button class="btn-price">заказать</button>
+          </li>
+          
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+            <p class="price__text price__text--service">Тестирование с выдачей технического заключения</p>
+            <h3 class="price__title price__title--title-price">Цена</h3>
+            <p class="price__text price__text--price">1 000 ₽</p>
+            <h3 class="price__title price__title--title-term">Срок</h3>
+            <p class="price__text price__text--term">30-120 мин</p>
+            <button class="btn-price">заказать</button>
+          </li>
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+            <p class="price__text price__text--service">Замена программного обеспечения</p>
+            <h3 class="price__title price__title--title-price">Цена</h3>
+            <p class="price__text price__text--price">1 000 ₽</p>
+            <h3 class="price__title price__title--title-term">Срок</h3>
+            <p class="price__text price__text--term">30-120 мин</p>
+            <button class="btn-price">заказать</button>
+          </li>
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+            <p class="price__text price__text--service">Замена программного обеспечения</p>
+            <h3 class="price__title price__title--title-price">Цена</h3>
+            <p class="price__text price__text--price">1 000 ₽</p>
+            <h3 class="price__title price__title--title-term">Срок</h3>
+            <p class="price__text price__text--term">30-120 мин</p>
+            <button class="btn-price">заказать</button>
+          </li>
+          <li class="price__item swiper-slide">
+            <h3 class="price__title price__title--title-service">Ремонтные услуги</h3>
+        
+            <h3 class="price__title price__title--title-price">Цена</h3>
+           
+            <h3 class="price__title price__title--title-term">Срок</h3>
+          
+            <button class="btn-price">заказать</button>
+          </li>
+          
+        </ul>
+        <div class="swiper-pagination-price"></div>
+      </div>
+     
+    </section>
+    <div class="info-wrapper">
+    <p class="price__text-info">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+    <button class="price__text-button" type="button">Получить коммерческое предложение</button>
+  </div>
+    <footer class="footer">
+      <p class="footer__date">© 2019  CPS <br>Разработано командой Apesong</p>
+      
+      <p class="footer__policic">Политика конфиденциальности</p>
+    
+      <p class="footer__info">Информация, размещенная на данной странице, не является публичной офертой</p>
+      </footer>
+        
+
+      </div>
+  </div>
+
+<div class="body-content">
+  <aside class="burgermenu">
+      <div class="burgermenu__header">
+        <header class="burgermenu__container">
+          <ul class="header__menu">
+            <li class="header__menu_burger">
+              <input class="burger-close" type="button">
+            </li>
+            <li class="header__menu_logo">
+              <input class="header__logo" type="image" src="./img/Group.png" alt="логотип CSP">
+            </li>
+            <li class="header__menu_search">
+              <input class="header__search" type="button" alt="кнопка поиск">
+            </li>
+          </ul>
+        </header>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul class="menu__item">
+            <li class="menu-element"><a class="#">Ремонт техники</a></li>
+            <li class="menu-element"><a href="#">Услуги и сервисы</a></li>
+            <li class="menu-element"><a href="#">Корпоративным клиентaм</a></li>
+            <li class="menu-element"><a href="#">Продавцам техники</a></li>
+            <li class="menu-element"><a href="#">Партнерам</a></li>
+            <li class="menu-element"><a href="#">Производителям</a></li>
+            <li class="menu-element"><a href="#">Наши сервисные центры</a></li>
+            <li class="menu-element"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="foter-menu">
+        <ul class="foter-menu__item">
+          <li class="phone">
+              <button class="toggle-button__call" alt="позвонить"></button>
+          </li>
+          <li class="chat">
+            <button class="toggle-button__text" alt="написать"></button>
+          </li>
+          <li class="profile">
+            <button class="toggle-profile" alt="профиль"></button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <div class="mail">
+          <a href="mailto:mail@cps.com">mail@cps.com</a>
+        </div>
+        <div class="number">
+          <a href="tel:8 800 890 8900">8 800 890 8900</a>
+        </div>
+        <div class="lang">
+          <ul class="lang__item">
+            <li class="lang__item--ru--active">RU</li>
+            <li class="lang__item--en">EN</li>
+            <li class="lang__item--ch">CH</li>
+          </ul>
+        </div>
+      </div>
+    </aside></div>
+  
+
+  <div class="modal__call">
+    <div class="call__modal hidden">
+      <button class="call__button"></button>
+      <h1 class="call__title">Заказать звонок</h1>
+      <form class="form" id="formFeedback" action="#" method="post">
+        <input class="form__number" type="text" name="userNumber" required pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон">
+        
+        <p class="form__text">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="form__text-link"><a href="#">обработку персональных данных</a></span>
+          и соглашаетесь с нашей
+          <span class="form__text-link"><a href="#">политикой конфиденциальности</a></span>
+        </p>
+        
+        <button class="form__submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal__feedback hidden">
+    <button class="modal__button"></button>
+    <h1 class="modal-text__title">Обратная связь</h1>
+    <form class="form" id="formFeedback" action="#" method="post">
+      <input class="form__input form__input--name" type="text" name="userName" required placeholder="Имя">
+      <input class="form__input form__input--number" type="text" name="userNumber" required pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон">
+      <input class="form__input form__input--mail" type="email" name="userMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Почта">
+      <textarea class="form__textarea" name="message" cols="30" rows="5" placeholder="Сообщение"></textarea>
+      <p class="form__text">
+        Нажимая “отправить”, вы даете согласие на
+        <span class="form__text-conf">обработку персональных данных</span>
+        и соглашаетесь с нашей
+        <span class="form__text-conf">политикой конфиденциальности</span>
+      </p>
+      <button class="form__button form__button--submit" type="submit">Отправить</button>
+    </form>
+  </div>
+  
+  
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
