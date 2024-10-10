@@ -19,13 +19,18 @@ document.addEventListener('click', function (event) {
   const isClickInsideMenu = menuBurger.contains(event.target);
   const isClickOnBurger = btnBurger.contains(event.target);
 
-  // Добавляем условие для проверки ширины экрана
+  // Логика закрытия меню работает только на экранах до 1120px
   if (window.innerWidth <= 1120) {
     if (!isClickInsideMenu && !isClickOnBurger) {
       menuBurger.style.display = 'none';
       btnBurger.style.display = 'block'; // Показываем кнопку снова
     }
   }
+});
+
+// Предотвращаем закрытие меню, если клик происходит внутри меню или на кнопке
+menuBurger.addEventListener('click', function (event) {
+  event.stopPropagation();
 });
 
 clickMenu();
