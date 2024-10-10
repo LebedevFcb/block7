@@ -30,7 +30,12 @@ document.addEventListener('click', function (event) {
 
 // Предотвращаем закрытие меню, если клик происходит внутри меню или на кнопке
 menuBurger.addEventListener('click', function (event) {
-  event.stopPropagation();
+  event.stopPropagation(); // Останавливаем событие клика внутри меню
+});
+
+// Предотвращаем закрытие при клике на кнопку меню
+btnBurger.addEventListener('click', function (event) {
+  event.stopPropagation(); // Останавливаем событие клика на кнопке
 });
 
 clickMenu();
@@ -50,4 +55,5 @@ window.addEventListener('resize', checkScreenSize);
 
 // Проверка при загрузке страницы
 checkScreenSize();
+
 
